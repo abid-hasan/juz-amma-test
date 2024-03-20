@@ -10,6 +10,8 @@ body {
   padding: 20px;
 }
 
+h1 { color: #7a7c7f; font-size: 29px; font-family: "Libre Baskerville", serif; line-height: 45px; text-align: center; text-shadow: 0 1px 1px #fff; padding-top: 20px; }
+
 .ayahImageContainer {
   margin-bottom: 15px;
   border: 1px solid #ddd; /* Light grey border */
