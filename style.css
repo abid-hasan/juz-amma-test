@@ -1,0 +1,55 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #a7f5d8;
+  margin: 0;
+  padding: 20px;
+}
+
+.ayahImageContainer {
+  margin-bottom: 15px;
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 15px;
+  overflow-x: auto; /* Allows horizontal scrolling */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%; /* Set to 100% to use full width of the screen */
+}
+
+.ayahImage {
+  border-radius: 4px;
+  width: auto; /* Set width to auto to maintain original image width */
+  min-width: 100%; /* Ensures the image is at least as wide as the container */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: contain; /* Keeps the image from being stretched */
+}
+
+.button {
+  display: inline;
+  padding: 15px 25px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(70, 130, 180);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+
+.button:hover {
+  background-color: rgb(36, 114, 177);
+}
+
+.button:active {
+  background-color: rgb(36, 114, 177);
+  box-shadow: 0 3px #999;
+  transform: translateY(4px);
+}
