@@ -1,5 +1,5 @@
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Libre Baskerville", serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,9 +8,16 @@ body {
   background-color: #a7f5d8;
   margin: 0;
   padding: 20px;
+  /* background-image: url('bg.jpg'); */
+  background: linear-gradient(45deg, rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url('bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(202, 168, 168, 0.5);
 }
 
-h1 { color: #7a7c7f; font-size: 29px; font-family: "Libre Baskerville", serif; line-height: 45px; text-align: center; text-shadow: 0 1px 1px #fff; padding-top: 20px; }
+h1 { color: rgba(255, 255, 255, 0.5); font-size: 29px; font-family: "Libre Baskerville", serif; line-height: 45px; text-align: center; text-shadow: 0 1px 1px #fff; padding-top: 20px; }
 
 .ayahImageContainer {
   margin-bottom: 15px;
@@ -34,24 +41,21 @@ h1 { color: #7a7c7f; font-size: 29px; font-family: "Libre Baskerville", serif; l
   display: inline;
   padding: 15px 25px;
   margin-bottom: 15px;
+  font-family: "Libre Baskerville", serif;
   font-size: 20px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: rgb(70, 130, 180);
+  background-color: rgb(36, 114, 177);
   border: none;
   border-radius: 15px;
   box-shadow: 0 5px #999;
 }
 
-.button:hover {
-  background-color: rgb(36, 114, 177);
-}
-
 .button:active {
-  background-color: rgb(36, 114, 177);
-  box-shadow: 0 3px #999;
+  background-color: rgb(22, 96, 156);
+  box-shadow: 0 3px #666;
   transform: translateY(4px);
 }
