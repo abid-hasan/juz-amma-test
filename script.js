@@ -52,7 +52,7 @@ function getRandomVerseFromJuzAmma() {
   };
 }
 
-function loadAyah(surah, ayah) {
+function displayAyah(surah, ayah) {
   const imageUrl = `https://cdn.islamic.network/quran/images/high-resolution/${surah}_${ayah}.png`;
   document.getElementById('ayahImage').src = imageUrl;
 }
@@ -101,13 +101,14 @@ function loadPreviousAyah() {
   document.getElementById('ayahImage').src = previousImageUrl;
 }
 
-document.getElementById('loadAyah').addEventListener('click', () => {
+function loadAyah() {
   const { surah, ayah } = getRandomVerseFromJuzAmma();
   currentSurah = surah;
   currentAyah = ayah;
-  loadAyah(surah, ayah);
-});
+  displayAyah(surah, ayah);
+}
 
+document.getElementById('loadAyah').addEventListener('click', loadAyah);
 document.getElementById('loadNextAyah').addEventListener('click', loadNextAyah);
 document.getElementById('loadPreviousAyah').addEventListener('click', loadPreviousAyah);
 
@@ -122,3 +123,7 @@ function scrollContainerToRight() {
 
 // This function should be called every time the image is loaded or updated
 document.getElementById('ayahImage').onload = scrollContainerToRight;
+
+// Call on page load
+scrollContainerToRight();
+loadAyah();
